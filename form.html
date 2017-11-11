@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body { 
+    background:  url("form.jpg") no-repeat fixed center;
+background-size: cover; 
+background-color: #cccccc;
+height: 100%;
+}
+</style>
+<title>Game of Thrones</title>
+</head>
+<body><br><br><br><br><br><br><br><br>
+<h3 class="w3-wide w3-center w3-text-white"><b>Confirm You are a Game Of Thrones Fan</b></h3>
+<form action="choice.html" class="w3-wide w3-center w3-text-white" onsubmit="return checkForm()" name="myForm">
+<p>Whose real name is Aegon Targaryen</p>
+<select name="fname">
+<option value="Robb Stark" >Robb Stark</option>
+<option value="Jon Snow" >Jon Snow</option>
+<option value="Jamie Lannister" >Jamie Lannister</option>
+</select>
+<p>What are the total number of seasons of Game of thrones</p>
+<select name="fname2">
+<option value="7" >7</option>
+<option value="8" >8</option>
+<option value="6" >6</option>
+</select>
+<input type="submit" value="submit">
+</form>
+<script>
+function checkForm()
+{
+var a = document.forms["myForm"]["fname"].value;
+var b = document.forms["myForm"]["fname2"].value;
+if(a=="Robb Stark"||a=="Jamie Lannister"||b=="7"||b=="6")
+{
+return false;
+}
+
+}
+</script>
+</body>
+</html>

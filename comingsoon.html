@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<style>
+a:link, a:visited {
+    background-color: ##6600ff;
+    color: white;
+   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: ;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url('comingsoon.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft"><br>
+ <a onclick="goBack()">GO BACK TO WEBSITE</a>
+  </div>
+  <div class="middle">
+    <h1>PAID CONTENT</h1>
+    <hr><br>
+    <a href="signup.html">CLICK TO BECOME A MEMBER</a></p>
+  </div>
+  <div class="bottomleft">
+    <p></p>
+  </div>
+</div>
+<script>
+function goBack(){
+window.history.back();
+}
+
+</script>
+
+</body>
+</html>
